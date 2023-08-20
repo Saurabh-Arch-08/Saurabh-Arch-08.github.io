@@ -39,10 +39,6 @@ export default function useArticleReactions(slug) {
     }
   }, [hydrated, setReactionsToLocalStorage]);
 
-  useEffect(() => {
-    setReactions(data);
-  }, [data]);
-
   async function handleIncrementLike() {
     updateReactions('liked');
 
