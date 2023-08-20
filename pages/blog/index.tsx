@@ -3,7 +3,6 @@ import { convertToArticleList, getAllArticles } from '@/lib/notion';
 import { ArticleList } from '@/components/ArticleList';
 import { Container } from 'layouts/Container';
 import Image from 'next/legacy/image';
-import { TagList } from '@/components/TagList';
 import { handleArticleClicked } from '@/lib/handleArticleClick';
 import slugify from 'slugify';
 
@@ -66,7 +65,6 @@ export default function Blog({ featuredArticle, articles, tags }) {
           </div>
         </button>
       </div>
-      <TagList tag={''} tags={tags} />
       <ArticleList articles={articles} showEndMessage fullHeight />
     </Container>
   );

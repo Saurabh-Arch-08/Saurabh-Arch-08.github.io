@@ -50,7 +50,7 @@ export default function useArticleReactions(slug) {
       })
     });
 
-    mutate({ ...data, like_count: data.like_count + 1 });
+    //mutate({ ...data, like_count: data.like_count + 1 });
   }
 
   async function handleDecrementLike() {
@@ -64,7 +64,7 @@ export default function useArticleReactions(slug) {
       })
     });
 
-    mutate({ ...data, like_count: data.like_count - 1 });
+    //mutate({ ...data, like_count: data.like_count - 1 });
   }
 
   async function handleIncrementLove() {
@@ -78,7 +78,7 @@ export default function useArticleReactions(slug) {
       })
     });
 
-    mutate({ ...data, love_count: data.love_count + 1 });
+    //mutate({ ...data, love_count: data.love_count + 1 });
   }
 
   async function handleDecrementLove() {
@@ -92,7 +92,7 @@ export default function useArticleReactions(slug) {
       })
     });
 
-    mutate({ ...data, love_count: data.love_count - 1 });
+    //mutate({ ...data, love_count: data.love_count - 1 });
   }
 
   async function handleIncrementClap() {
@@ -106,7 +106,7 @@ export default function useArticleReactions(slug) {
       })
     });
 
-    mutate({ ...data, clap_count: data.clap_count + 1 });
+    //mutate({ ...data, clap_count: data.clap_count + 1 });
   }
 
   async function handleDecrementClap() {
@@ -120,7 +120,7 @@ export default function useArticleReactions(slug) {
       })
     });
 
-    mutate({ ...data, clap_count: data.clap_count - 1 });
+    //mutate({ ...data, clap_count: data.clap_count - 1 });
   }
 
   async function handleIncrementParty() {
@@ -134,7 +134,7 @@ export default function useArticleReactions(slug) {
       })
     });
 
-    mutate({ ...data, party_count: data.party_count + 1 });
+    //mutate({ ...data, party_count: data.party_count + 1 });
   }
 
   async function handleDecrementParty() {
@@ -148,7 +148,7 @@ export default function useArticleReactions(slug) {
       })
     });
 
-    mutate({ ...data, party_count: data.party_count - 1 });
+    //mutate({ ...data, party_count: data.party_count - 1 });
   }
 
   // === HELPER FUNCTIONS ===
@@ -179,7 +179,6 @@ export default function useArticleReactions(slug) {
     hasLoved,
     hasClapped,
     hasPartied,
-    reactions,
     handleIncrementLike,
     handleDecrementLike,
     handleIncrementLove,
